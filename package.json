@@ -17,6 +17,7 @@
     "orderby": "distance",
     "homepage_url": "https://geoloniamaps.github.io/pwamap/"
   },
+  "homepage": ".",
   "author": "",
   "license": "ISC",
   "dependencies": {
