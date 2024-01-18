@@ -1,0 +1,25 @@
+{
+  "name": "hippocrates-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hippocrates start",
+    "build": "hippocrates build"
+  },
+  "settings": {
+    "title": "Geolonia PWAマップ",
+    "description": "Google スプレッドシートを更新するだけでオリジナルの地図アプリを作成できる「Geolonia PWAマップ」",
+    "form_url": "",
+    "logo_image_url": "https://geoloniamaps.github.io/pwamap/icon-pwamap.svg",
+    "background_image_url": "https://geoloniamaps.github.io/pwamap/geolonia_bgimage_1920_1080.png",
+    "primary_color": "#d2691e",
+    "orderby": "distance",
+    "homepage_url": "https://geoloniamaps.github.io/pwamap/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hippocrates": "github:geolonia/hippocrates#6867100904462c87a6f20ffed9c477026a488510"
+  }
+}
