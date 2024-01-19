@@ -37,15 +37,15 @@ jobs:
           npm install
           npm run build
 
-      - name: Get branch name
-        id: branch-name
-        run: echo "::set-output name=branch::$(echo ${GITHUB_REF#refs/heads/})"
-  
+      - name: Extract repository name
+        id: repo-name
+        run: echo "::set-output name=repo::$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)"
+
       - name: Update HTML file
         run: |
-          BRANCH_NAME="${{ steps.branch-name.outputs.branch }}"
-          sed -i "s|src=\"/|src=\"/$BRANCH_NAME/|g" $GITHUB_WORKSPACE/build/index.html
-          sed -i "s|href=\"/|href=\"/$BRANCH_NAME/|g" $GITHUB_WORKSPACE/build/index.html
+          REPO_NAME="${{ steps.repo-name.outputs.repo }}"
+          sed -i "s|src=\"/|src=\"/$REPO_NAME/|g" $GITHUB_WORKSPACE/build/index.html
+          sed -i "s|href=\"/|href=\"/$REPO_NAME/|g" $GITHUB_WORKSPACE/build/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
