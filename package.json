@@ -20,6 +20,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hippocrates": "github:geolonia/hippocrates#6867100904462c87a6f20ffed9c477026a488510"
+    "hippocrates": "github:geolonia/hippocrates#b811b4a672fed86f6f42531cdbebd45ccf28053b"
   }
 }
