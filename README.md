@@ -16,3 +16,21 @@ Excel / CSV / GeoJSON 形式の、位置情報データをシンプルに可視�
 * Excel / CSV の列名、GeoJSON のプロパティは、こちらのスプレッドシートをご参考ください。
 * https://docs.google.com/spreadsheets/d/1_m8s4P5tdSeam3nzC5ruSfuvtSejQKEX1FiBeOWJN3E/edit?usp=sharing
 * 点形式のデータのみに対応しています。
+
+
+## 開発者向け
+
+依存関係のインストール
+```
+$ npm install
+```
+
+データのプレビュー　（http://localhost:8080 が立ち上がります）
+```
+$ npm start
+```
+
+ビルド
+```
+$ npm run build
+```
