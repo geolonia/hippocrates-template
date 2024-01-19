@@ -37,6 +37,16 @@ jobs:
           npm install
           npm run build
 
+      - name: Get branch name
+        id: branch-name
+        run: echo "::set-output name=branch::$(echo ${GITHUB_REF#refs/heads/})"
+  
+      - name: Update HTML file
+        run: |
+          BRANCH_NAME="${{ steps.branch-name.outputs.branch }}"
+          sed -i "s|src=\"/|src=\"/$BRANCH_NAME/|g" $GITHUB_WORKSPACE/build/index.html
+          sed -i "s|href=\"/|href=\"/$BRANCH_NAME/|g" $GITHUB_WORKSPACE/build/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
