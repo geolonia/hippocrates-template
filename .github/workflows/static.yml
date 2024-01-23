@@ -37,19 +37,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Extract repository name
-        id: repo-name
-        run: echo "::set-output name=repo::$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)"
-
-      - name: Update HTML file
-        run: |
-          REPO_NAME="${{ steps.repo-name.outputs.repo }}"
-          sed -i "s|src=\"/|src=\"/$REPO_NAME/|g" $GITHUB_WORKSPACE/build/index.html
-          sed -i "s|href=\"/|href=\"/$REPO_NAME/|g" $GITHUB_WORKSPACE/build/index.html
-          for file in $GITHUB_WORKSPACE/build/assets/*.js; do
-            sed -i "s|/data.json?|/$REPO_NAME/data.json?|g" "$file"
-          done
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

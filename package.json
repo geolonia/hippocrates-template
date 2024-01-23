@@ -17,9 +17,10 @@
     "orderby": "distance",
     "homepage_url": "https://geoloniamaps.github.io/pwamap/"
   },
+  "homepage": ".",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hippocrates": "github:geolonia/hippocrates#b811b4a672fed86f6f42531cdbebd45ccf28053b"
+    "hippocrates": "github:geolonia/hippocrates#main"
   }
 }
