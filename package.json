@@ -9,7 +9,7 @@
   },
   "settings": {
     "title": "Hippocrates Template",
-    "description": "Hippocrates Template はデータ可視化用のテンプレートです。package.json 内の description を書き変えることで、この文章を置き換えることができます。",
+    "description": "Hippocrates Template はデータ可視化用のテンプレートです。package.json 内の description を書き変えることで、この文章を置き換えることができます。GitHub リポジトリ（https://github.com/geolonia/hippocrates-template）でオープンソースとして公開しています。",
     "logo": "https://geoloniamaps.github.io/pwamap/icon-pwamap.svg",
     "ogp": "https://geoloniamaps.github.io/pwamap/apple-splash-1136-640.jpg"
   },
