@@ -8,19 +8,15 @@
     "build": "hippocrates build"
   },
   "settings": {
-    "title": "Geolonia PWAマップ",
-    "description": "Google スプレッドシートを更新するだけでオリジナルの地図アプリを作成できる「Geolonia PWAマップ」",
-    "form_url": "",
-    "logo_image_url": "https://geoloniamaps.github.io/pwamap/icon-pwamap.svg",
-    "background_image_url": "https://geoloniamaps.github.io/pwamap/geolonia_bgimage_1920_1080.png",
-    "primary_color": "#d2691e",
-    "orderby": "distance",
-    "homepage_url": "https://geoloniamaps.github.io/pwamap/"
+    "title": "Hippocrates Template",
+    "description": "Hippocrates Template はデータ可視化用のテンプレートです。package.json 内の description を書き変えることで、この文章を置き換えることができます。",
+    "logo": "https://geoloniamaps.github.io/pwamap/icon-pwamap.svg",
+    "ogp": "https://geoloniamaps.github.io/pwamap/apple-splash-1136-640.jpg"
   },
   "homepage": ".",
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hippocrates": "github:geolonia/hippocrates#main"
+    "hippocrates": "github:geolonia/hippocrates#31cc67407e5789328f50ee2bc8b03c7997495040"
   }
 }
