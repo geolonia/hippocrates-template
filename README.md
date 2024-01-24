@@ -13,10 +13,9 @@ Excel / CSV / GeoJSON 形式の、位置情報データをシンプルに可視�
 
 ### **:black_medium_square: データを追加する**
 * Excel / CSV / GeoJSON ファイルをリポジトリにアップロードして下さい。
-* Excel / CSV の列名、GeoJSON のプロパティは、こちらのスプレッドシートをご参考ください。
-* https://docs.google.com/spreadsheets/d/1_m8s4P5tdSeam3nzC5ruSfuvtSejQKEX1FiBeOWJN3E/edit?usp=sharing
+* Excel / CSV の列名、GeoJSON のプロパティは、デジタル庁の[自治体標準オープンデータセット（正式版）](https://www.digital.go.jp/resources/open_data/municipal-standard-data-set-test) に準拠しています。
+* サンプルの列名は [山形市指定緊急避難場所一覧（オープンデータ）](https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/006/196/062014_evacuation_space.csv)をご覧ください。
 * 点形式のデータのみに対応しています。
-
 
 ## 開発者向け
 
@@ -34,3 +33,6 @@ $ npm start
 ```
 $ npm run build
 ```
+
+## クレジット
+- [[山形市指定緊急避難場所一覧]](https://www.city.yamagata-yamagata.lg.jp/_res/projects/default_project/_page_/001/006/196/062014_evacuation_space.csv)、山形市、クリエイティブ・コモンズ・ライセンス 表示 4.0 国際（https://creativecommons.org/licenses/by/4.0/deed.ja）
